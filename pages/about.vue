@@ -60,7 +60,6 @@
 
 .about-title {
   margin-bottom: 20px;
-  width: 90%;
 }
 
 .about-container {
@@ -95,6 +94,7 @@
   }
 
   .about-title {
+    width: 90%;
     margin-bottom: 30px;
   }
 
