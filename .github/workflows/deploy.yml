@@ -22,5 +22,5 @@ jobs:
       # Netlifyにデプロイする。「--dir=./dist」の部分はビルド結果ができあがるディレクトリ名に変えましょう。
       - run: npx netlify-cli deploy --dir=./dist
         env:
-          NETLIFY_SITE_ID: ${{ 7804956b-4777-4675-863d-fd5e1837ebd6 }}
-          NETLIFY_AUTH_TOKEN: ${{ hHh8FYjIPdHgVMIucOZedhuVr4Sy8a_FgnWhTAlSM7A }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_SITE_ID }}
